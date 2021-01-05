@@ -12,4 +12,3 @@
 
 1. java
 2. Thymeleaf
-3. in-memory database(H2 database)

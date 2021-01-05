@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+   <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<title>Photographer Directory</title>
+</head>
+
+<body>
+
+
+<!-- <p th:text="'Time on the server is ' + ${theDate}" class="funny"/>  -->
+
+
+<div class="container">
+
+	<h3>Photographer Directory</h3>
+	<hr>
+	
+	<!-- add a button -->
+	<a th:href="@{/photographer/showFormForAdd}"
+		class="btn btn-primary btn-sm mb-3">
+		Add Photographer
+	</a>
+	
+	<table class="table table-bordered table-striped">
+		<thead class="thead-dark">
+			<tr>
+				<th>id</th>
+				<th>full Name</th>
+				<th>email</th>
+				<th>phone No</th>
+				<th>location</th>
+				<th>ex Fees</th>
+				<th>experience</th>
+				<th>job Type</th>
+				<th>password</th>
+				<th>delete list</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr th:each="tempPhotographer : ${photographer}">
+			
+				<td th:text="${tempPhotographer.id}" />	
+				<td th:text="${tempPhotographer.fullName}" />	
+				<td th:text="${tempPhotographer.email}" />	
+				<td th:text="${tempPhotographer.phoneNo}" />
+				<td th:text="${tempPhotographer.location}" />
+				<td th:text="${tempPhotographer.exFees}" />
+				<td th:text="${tempPhotographer.experience}" />
+				<td th:text="${tempPhotographer.jobType}" />
+				<td th:text="${tempPhotographer.password}" />
+				<td><a th:href="@{'/photographer/delete/{id}'(id=${tempPhotographer.id})}" class="btn btn-danger btn-sm mb-3" method="GET">Delete</a><td/>
+				           
+			</tr>
+		</tbody>		
+	</table>
+	
+</div>
+	
+</body>
+</html>
+
+
+	

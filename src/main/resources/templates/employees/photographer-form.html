@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<title>Save Photographer</title>
+</head>
+
+<body>
+
+	<div class="container">
+	
+		<h3>Photographer Directory</h3>
+		<hr>
+		
+		<p class="h4 mb-4">Save Photographer</p>
+	
+		<form action="#" th:action="@{/photographer/save}"
+						 th:object="${photographer}" method="POST">
+		
+			<input type="text" th:field="*{fullName}"
+					class="form-control mb-4 col-4" placeholder="Full name">
+					
+			<input type="text" th:field="*{email}"
+					class="form-control mb-4 col-4" placeholder="Email">
+
+			<input type="text" th:field="*{phoneNo}"
+					class="form-control mb-4 col-4" placeholder="phone No">
+					
+			<input type="text" th:field="*{location}"
+					class="form-control mb-4 col-4" placeholder="location">
+					
+			<input type="text" th:field="*{exFees}"
+					class="form-control mb-4 col-4" placeholder="ex Fees">
+					
+			<input type="text" th:field="*{experience}"
+					class="form-control mb-4 col-4" placeholder="experience">
+					
+			<input type="text" th:field="*{jobType}"
+					class="form-control mb-4 col-4" placeholder="job Type">
+					
+			<input type="text" th:field="*{password}"
+					class="form-control mb-4 col-4" placeholder="password">
+				
+			<button type="submit" class="btn btn-info col-2">Save</button>
+						
+		</form>
+	
+		<hr>
+		<a th:href="@{/photographer/list}">Back to Photographer List</a>
+		
+	</div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+

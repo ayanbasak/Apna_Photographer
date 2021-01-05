@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+   <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<title>User Directory</title>
+</head>
+
+<body>
+
+
+<!-- <p th:text="'Time on the server is ' + ${theDate}" class="funny"/>  -->
+
+
+<div class="container">
+
+	<h3>User Directory</h3>
+	<hr>
+	
+	<!-- add a button -->
+	<a th:href="@{/user/showFormForAdd}"
+		class="btn btn-primary btn-sm mb-3">
+		Add User
+	</a>
+	
+	<table class="table table-bordered table-striped">
+		<thead class="thead-dark">
+			<tr>
+				<th>id</th>
+				<th>full Name</th>
+				<th>email</th>
+				<th>phone No</th>
+				<th>location</th>
+				<th>budget</th>
+				<th>ocDate</th>
+				<th>need</th>
+				<th>password</th>
+				<th>delete list</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr th:each="tempUser : ${user}">
+			
+				<td th:text="${tempUser.id}" />	
+				<td th:text="${tempUser.fullName}" />	
+				<td th:text="${tempUser.email}" />	
+				<td th:text="${tempUser.phoneNo}" />
+				<td th:text="${tempUser.location}" />
+				<td th:text="${tempUser.budget}" />
+				<td th:text="${tempUser.ocDate}" />
+				<td th:text="${tempUser.need}" />
+				<td th:text="${tempUser.password}" />
+				<td><a th:href="@{'/user/delete/{id}'(id=${tempUser.id})}" class="btn btn-danger btn-sm mb-3" method="GET">Delete</a><td/>
+				           
+			</tr>
+		</tbody>		
+	</table>
+	
+</div>
+	
+</body>
+</html>
+
+
+	

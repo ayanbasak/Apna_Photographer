@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org"/>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Apna Photograoher Team">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Apna Photographer Home page</title>
+
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css?family=Playball&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" th:href="@{/css/templatemo-lava.css}">
+
+    <link rel="stylesheet" th:href="@{/css/owl-carousel.css}">
+    
+    <link rel="stylesheet" th:href="@{/css/loginModal.css}">
+    
+    
+
+</head>
+
+<body>
+
+
+
+
+  
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                       
+                        <a class="logo">
+                        APNA PHOTOGRAPHER
+                        </a>
+                        
+                        <ul class="nav">
+                            
+                            <li class="scroll-to-section"><a href="#about" class="menu-item">About</a></li>
+                            <li class="submenu">
+                                <a href="javascript:;">Drop Down</a>
+                                <ul>
+                                    <li><a th:href="@{/photographer/showFormForAdd}">I am Photographer</a></li>
+                                    <li><a th:href="@{/user/showFormForAdd}" >Hire Photographer </a></li>
+                                    
+         
+                                    <li><a href="" class="menu-item">About Us</a></li>
+                                    <li><a href="" class="menu-item">Contact Us</a></li>
+                                </ul>
+                            </li>
+                            <li class="scroll-to-section"><a href="#contact-us" class="menu-item">Message Us</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+    
+    
+     
+
+
+    
+  
+         <div class="welcome-area" id="welcome">
+
+        
+        <div class="header-text">
+            <div class="container">
+                <div class="row">
+                    <div class="left-text col-lg-5 col-md-12 col-sm-12 col-xs-12"
+                        data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                        <h1>We Capture your <em>Great Moments</em>...</h1>
+                        <p  class="font-weight-bolder">We are trying to build a community of Photographers ,This will be that platform.You can get your proposals from our platform.<br> So join with us & show your skills with <var>Apna Photographer</var>.
+                        </p> 
+                        <a href="#about" class="main-button-slider">EXPLORE MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"
+                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <img th:src="@{/images/features-icon-1.png}" />
+                            
+                            <h4>Hire Phtographer</h4>
+                            <p>There are plenty of professional Photographer, are you ready to capture your memorable Feelings & Moments</p>
+                            <a th:href="@{/photographer/showFormForAdd}" class="main-button">
+                                Hire Phtographers
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"
+                    data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            
+                            <img th:src="@{/images/features-icon-2.png}" />
+                            <h4>Register As Photographer</h4>
+                            <p>Looking job in Photography ? You are in the right place. This is the place for you<br></p>
+                            <a th:href="@{/user/showFormForAdd}" class="main-button">
+                                Join With Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <section class="section" id="promotion">
+        
+
+
+    <div class="container">
+    <div class="row">
+      <div class="col-12">
+          
+        <div id="slider4" class="carousel slide mb-5" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li class="active" data-target="#slider4" data-slide-to="0"></li>
+            <li data-target="#slider4" data-slide-to="1"></li>
+            <li data-target="#slider4" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+            
+            
+              <img class="d-block img-fluid" th:src="@{/images/1.jpg}" alt="Second Slide">
+              <div class="carousel-caption d-none d-md-block">
+                
+                <h3 class="content">“Keep love in your heart. A life without it is like a sunless garden when the flowers are.”  <br>   —Oscar WIlde</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block img-fluid" th:src="@{/images/2.jpg}" alt="Second Slide">
+              <div class="carousel-caption d-none d-md-block">
+                
+                 <h3 class="content">“The highest happiness on earth is the happiness of marriage.”<br>—William Lyon Phelps</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block img-fluid" th:src="@{/images/3.jpg}"  alt="Third Slide">
+              <div class="carousel-caption d-none d-md-block">
+                
+               <h3 class="content">“Once in awhile, right in the middle of an ordinary life, love gives us a fairy tale.”</h3>
+              </div>
+            </div>
+          </div>
+
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+<div class="container">
+
+  <h2 class="font-weight-light text-center text-lg-left mt-4 mb-0">Taking an image, freezing a moment, reveals how rich reality truly is ...</h2>
+
+  <hr class="mt-2 mb-5">
+
+  <div class="row text-center text-lg-left">
+
+    <div class="col-lg-3 col-md-4 col-6">
+      <a class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" th:src="@{/images/5.jpg}"  alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" th:src="@{/images/6.jpg}"  alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" th:src="@{/images/7.jpg}"  alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" th:src="@{/images/8.jpg}" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" th:src="@{/images/9.jpg}" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" th:src="@{/images/10.jpg}" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" th:src="@{/images/11.jpg}" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" th:src="@{/images/12.jpg}" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" th:src="@{/images/13.jpg}" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" th:src="@{/images/14.jpg}" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" th:src="@{/images/15.jpg}" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" th:src="@{/images/16.jpg}" alt="">
+          </a>
+    </div>
+  </div>
+
+</div>
+    </section> 
+    
+
+    <div class="right-image-decor"></div>
+
+
+    
+    <footer id="contact-us">
+        <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="contact-form">
+                               <form action="#" th:action="@{/message/save}" th:object="${message}" method="POST">
+
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <fieldset>
+                                        <input name="" class="form-control" th:field="*{name}" placeholder="Full name" type="text" style="background-color: rgba(250,250,250,0.3);">
+                                            
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <fieldset>
+                                        
+                                        	<input name="" class="form-control" th:field="*{email}" placeholder="Email/Contact No." type="text" style="background-color: rgba(250,250,250,0.3);">
+                                        	
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <textarea name="message" rows="6" id="message" placeholder="Your Message" th:field="*{mess}"
+                                                required="" style="background-color: rgba(250,250,250,0.3);"></textarea>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <button type="submit" id="form-submit" class="main-button">Send Message
+                                                Now</button>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>                  
+						</div>
+                    </div>
+                    
+                    <div class="right-content col-lg-6 col-md-12 col-sm-12">
+                        <h2>More About <em>Apna Photographer</em></h2>
+                        <p>Phasellus dapibus urna vel lacus accumsan, iaculis eleifend leo auctor. Duis at finibus odio.
+                            Vivamus ut pharetra arcu, in porta metus. Suspendisse blandit pulvinar ligula ut elementum.
+                            <br><br>If you need this contact form to send email to your inbox, you may follow our  page
+                            for more detail.</p>
+                        <ul class="social">
+                            <li><a href="https://fb.com/templatemo"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href=""><i class="fa fa-rss"></i></a></li>
+                            <li><a href=""><i class="fa fa-dribbble"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="sub-footer">
+                        <p> Maked by Apna Photographer Team</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js" integrity="sha256-kiFgik3ybDpn1VOoXqQiaSNcpp0v9HQZFIhTgw1c6i0=" crossorigin="anonymous"></script>
+    
+    <script src="/js/scrollreveal.min.js"></script>
+
+    <script src="/js/custom.js"></script>  
+
+   
+    
+    <script>
+    $('.carousel').carousel({
+      interval: 3000,
+      keyboard: true,
+      pause: 'hover',
+      wrap: true
+    });
+
+  </script>
+
+</body>
+</html>

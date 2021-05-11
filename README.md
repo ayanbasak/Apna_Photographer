@@ -1,6 +1,6 @@
 # This is a simple Photographers Application 
 
-##### features included
+#### features included
 
 1. photographers can upload their details
 2. customers can hire photographers
